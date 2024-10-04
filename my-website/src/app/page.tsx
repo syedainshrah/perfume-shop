@@ -1,3 +1,5 @@
+
+import Image from "next/image";
 export default function Home() {
   return (
     <main>
@@ -8,8 +10,10 @@ export default function Home() {
       <div className="flex flex-wrap justify-center space-x-6 p-4">
         {/* First Product */}
         <div className="size-28 border border-gray-300 rounded-lg p-4 shadow-md hover:border-red-500 overflow-hidden hover:scale-105 flex flex-col items-center">
-          <img
-            src="https://aromaconcepts.pk/cdn/shop/products/WhatsAppImage2023-07-12at23.36.39.jpg?v=1724221913&width=360"
+          <Image
+          src={require("https://aromaconcepts.pk/cdn/shop/products/WhatsAppImage2023-07-12at23.36.39.jpg?v=1724221913&width=360")}
+          alt="perfume 1"
+           // src="https://aromaconcepts.pk/cdn/shop/products/WhatsAppImage2023-07-12at23.36.39.jpg?v=1724221913&width=360"
             className="w-40 h-auto rounded-lg mb-4 border-separate transition-opacity hover:opacity-75 hover:rotate-1 hover:bg-blue-500 hover:shadow-lg hover:border-red-500"
           />
           <div className="text-gray-800 text-lg font-serif hover:text-red-400">nouf-pineaplle-punch</div>
@@ -48,7 +52,7 @@ export default function Home() {
         </div>
 
         {/* Fifth Product */}
-        <div className="size-28 border border-gray-300 rounded-lg p-4 shadow-md hover:border-red-500 overflow-hidden hover:scale-105 flex flex-col items-center mb-4 ">
+        <div className="size-28 border border-gray-300 rounded-lg p-4 shadow-md hover:border-red-500 overflow-hidden hover:scale-105 flex flex-col items-center mb-4 ml-[30px] ">
           <img
             src="https://aromaconcepts.pk/cdn/shop/collections/North-stag.jpg?v=1632866149&width=535"
             className="w-40 h-auto rounded-lg mb-4 border-separate transition-opacity hover:opacity-75 hover:rotate-1 hover:bg-blue-500 hover:shadow-lg hover:border-red-500"
